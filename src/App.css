@@ -1,38 +1,311 @@
-.App {
-  text-align: center;
+/*styles for the heading section*/
+.heading {
+    width: 97%;
+    height: 50%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(185, 41, 65);
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for the heading's h1 element */
+.heading h1 {
+    font-size: 25px;
+    margin: 2px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styles for the table section */
+.table {
+    padding-left: 400px;
+    padding-top: 100px;
+    background-color: pink;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styles for the table and its contents */
+.table table {
+    border-collapse: collapse;
+    border-color: black;
+    background-color: azure;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for the table headers */
+.table table thead {
+    background-color: antiquewhite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styles for the table headers and cells */
+.table table th,
+.table table td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles for buttons inside the table */
+.table table button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+/* Hover effect for buttons */
+.table table button:hover {
+    transition: transform .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* Styles for the edit button */
+.table table #edit {
+    background-color: antiquewhite;
+}
+
+/* Styles for the delete button */
+.table table #delete {
+    background-color: red;
+    color: white;
+}
+
+/* Styles for the submission form section */
+.submitform {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+}
+
+/* Styles for the form details within the submission form */
+.submitform .form-details {
+    margin-top: 10px;
+    margin-left: 400px;
+    padding: 50px;
+    background-color: rgb(185, 62, 83);
+    width: 500px;
+    border: 1px solid #fff;
+    border-radius: 10%;
+}
+
+/* Styles for the h1 element inside the form details */
+.form-details h1 {
+    padding-left: 90px;
+}
+
+/*styles for form inside two div of form*/
+.submitform .form-details form {
+    padding: 90px 120px 90px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submitform .form-details input {
+    width: 200px;
+    margin-bottom: 20px;
+    padding-left: 400px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*styles for button inside the form*/
+.submitform .form-details button {
+    width: 150px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10%;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.submitform .form-details h1 {
+    padding-left: 90px;
+}
+
+/*------------------------------2652px (4K)----------------------------------------*/
+@media screen and (max-width: 2652px) {
+    .table {
+        padding-left: 500px;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    #edit,
+    #delete {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .submitform {
+        height: fit-content;
+    }
+
+    .submitform .form-details {
+        margin-left: 1000px;
+    }
+
+    .submitform .form-details h1 {
+        font-size: 40px;
+    }
+
+    .submitform .form-details input {
+        font-size: 24px;
+        width: 300px;
+    }
+
+    .submitform .form-details button {
+        font-size: 21px;
+    }
+}
+
+
+/*-------------------------------1440px laptop---------------------------------------*/
+@media screen and (max-width:1440px) {
+    .table {
+        padding-left: 200px;
+        padding-top: 60px;
+        align-items: center;
+        padding-right: 100px;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #edit,
+    #delete {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .submitform {
+        height: fit-content;
+    }
+
+    .submitform .form-details {
+        margin-left: 400px;
+    }
+
+    .submitform .form-details h1 {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .submitform .form-details input {
+        font-size: 14px;
+    }
+
+    .submitform .form-details button {
+        font-size: 15px;
+    }
+}
+
+/*=================================laptop (1024px)======================================*/
+@media screen and (max-width:1024px) {
+    .table {
+        width: fit-content;
+    }
+
+    .table table {
+        margin-right: 100px;
+    }
+
+    .submitform .form-details {
+        margin-left: 200px;
+    }
+
+    td,
+    th {
+        padding: 2px;
+        font-size: 13px;
+    }
+
+    #edit,
+    #delete {
+        font-size: 13px;
+    }
+}
+
+
+/*=================================Mobile (425px)======================================*/
+@media screen and (max-width:425px) {
+    .heading {
+        width: 100vh;
+    }
+
+    .table {
+        padding-left: 1px;
+        padding-top: 80px;
+        width: fit-content;
+    }
+
+    td,
+    th {
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    #edit,
+    #delete {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .submitform {
+        width: fit-content;
+    }
+
+
+    .submitform .form-details {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .submitform .form-details h1 {
+        font-size: 30px;
+    }
+
+    .submitform .form-details input {
+        font-size: 20px;
+    }
+
+    .submitform .form-details button {
+        font-size: 20px;
+    }
+}
+
+/*=================================Mobile (375px)======================================*/
+@media screen and (max-width:375px) {
+
+    .submitform .form-details {
+        width: 100%;
+    }
+
+    .submitform .form-details h1 {
+        margin-left: 26px;
+    }
+}
+
+/*=================================Mobile (320px)======================================*/
+@media screen and (max-width:320px) {
+    .submitform .form-details h1 {
+        margin-left: 20px;
+    }
+
+    .submitform .form-details button {
+        font-size: 21px;
+    }
+
+    td,
+    th {
+        font-size: 19px;
+    }
 }
